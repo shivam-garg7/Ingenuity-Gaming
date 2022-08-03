@@ -1,0 +1,41 @@
+#or{
+    padding-top: 20px;
+    background-color: beige;
+    padding-bottom: 20px;
+    
+}
+
+.header{
+   padding-top: 10px;
+    width: 100%;
+    height:90vh;
+    background-color: aliceblue;
+    text-align: center;
+    box-sizing: border-box;
+  
+    
+}
+.h{
+    box-sizing: border-box;
+    background-color: aliceblue;
+    text-align:center;
+}
+#r{
+    background-color: aliceblue;
+
+}
+#r ul{
+    display: table;
+    margin:0 auto;
+}
+#r li{
+    padding: 10px;
+    text-align: justify;
+    padding-right: 60px;
+}
+ p{
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align:center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
