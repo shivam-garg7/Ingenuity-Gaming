@@ -52,6 +52,8 @@ html {
 .Team{
     text-align: center;
     margin: 10px;
+    justify-content: space-evenly;
+    margin-left: 15px;
 }
 .member{
     width: 300px;
@@ -84,7 +86,7 @@ html {
     height: auto;
 }
 .proj1{
-    width: 110%;
+    width: 118%;
     height:800px;
     margin-left: 10px;   
 }
@@ -136,7 +138,7 @@ a{
 }
 .template{
    margin-top: 1px;
-    width: 100%;
+    width: 106%;
     height: 50vh;
     margin-left: 20px;
     background-color: rgb(77, 77, 155);
@@ -163,7 +165,7 @@ a{
 {
     
     padding-top: 20px;
-    padding-left: 20px;
+    padding-left: 90px;
     height: 100px;
     width: 70vh;
     text-align: left;
@@ -236,6 +238,7 @@ a{
     justify-content: center;
     align-items: center;
     display: flex;
+    width: 106%;
 }
 .lp h1{
     
@@ -252,7 +255,7 @@ a{
   }
   .op{
     margin-top: 2px;
-    width: auto;
+    width: 106%;
     height: 110px;
     background-color: rgb(77, 77, 155);
     margin-left: 20px;
@@ -270,7 +273,7 @@ a{
     padding-left: 40px;
   }
   .copy{
-    width: auto;
+    width: 106%;
     height: 50px;
     background-color: rgb(103, 209, 241);
     text-align: center;
