@@ -1,7 +1,7 @@
 *{padding: 0;margin: 0; box-sizing:border-box ;}
 html {
     scroll-behavior: smooth;
-    scroll-padding: 90px;
+    scroll-padding: 10px;
 }
 .menu{
     background:rgb(50, 50, 50);
@@ -25,6 +25,7 @@ html {
     margin: 10px;
     padding: 10px;
 }
+}
 .menu ul li a{
     text-decoration: none;
     text-transform: uppercase;
@@ -38,11 +39,12 @@ html {
     color: black;
 }
 .image img{
-    width: 100%;
+    width: 97.5%;
     height:800px;
-    margin-left: 20px;
+    margin-left: 45px;
     margin-top: 5%;
     position: relative;
+    margin-right: 70px;
 }
 .Team{
     text-align: center;
@@ -275,6 +277,7 @@ a{
   .ccc{
     padding: 0;margin: 0; box-sizing:border-box ;
     width: 100%;
+    height: 100%;
   }
 
 
