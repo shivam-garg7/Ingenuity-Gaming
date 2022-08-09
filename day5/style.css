@@ -109,14 +109,14 @@
 @keyframes dron{
     0%{
         
-        transform: translateX(0px);
+        transform: translateX(0px) translateY(-5);
     }
    
 
     
     100%{
        
-        transform: translateX(1400px);
+        transform: translateX(1400px)translateY(5);
         
     }
 }
