@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            letter-spacing: 1px;
+        }
+          
+        img,
+        button {
+            display: block;
+            margin: 0 auto;
+        }
+          
+        button {
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <script>
+         function myFunc() {
+        let image = document.getElementById('image');
+        let height = document.getElementById('height');
+        var width = document.getElementById('width');
+  
+        height.innerHTML += '<h1>height of image is :'
+        + image.clientHeight + 'px </h1>';
+        
+        width.innerHTML += '<h1>width of image is :'
+        + image.clientWidth + 'px </h1>';
+    }
+        document.body.style.backgroundColor="gray"
+         var num=Math.floor(Math.random() * 10);
+        var i=3;
+        while(i>0){
+            var same=prompt("Guess The Number");
+            if (same>9||same<0) {
+                alert("You Enter the no out of box");
+                i--;
+            } else if (same==num) {
+                alert("Congrulation you guess the right no.")
+                break;
+            } else {
+                alert("Try Again");
+                i--;
+            }
+            if(i==0)
+            alert("game over");
+        }
+        
+        
+     
+
+    </script>
+    <h1>
+        Guess The Number Game
+    </h1>
+      <br>
+      <br>
+      <img src=
+  "https://i.ytimg.com/vi/uXTmeceFtiU/maxresdefault.jpg"
+           alt=""
+           id="image">
+      <button type="submit"
+              onclick="myFunc()">
+        Please  Play Again
+    </button>
+    
+      <div style="background-color: lightgray">
+          <div id="height">
+    
+          </div>
+    
+          <div id="width">
+    
+          </div>
+      </div>
+</body>
+</html>

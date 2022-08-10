@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body  >
+    <script>
+    document.body.style.backgroundColor="yellow"; 
+    document.body.style.color="orange"; 
+    document.body.style.fontSize="30px";
+    document.body.style.margin="100px 0px 0px 500px";
+    var info = {
+        name: "Shivam Garg",
+        age: 21,
+        Address: {city:"Muzaffarnagar", state:"UP", pincode:251001 },
+        Hobbies: ["Travelling","Gaming"],
+        details: function() {
+            return this.name +" from "+ this.Address.city+"<br>"+"Age: "+this.age+"<br>"+"Hobbies: "+this.Hobbies;
+
+        }
+    }
+    document.write(info.details());</script>
+    
+</body>
+</html>
