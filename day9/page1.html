@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.body.style.backgroundColor="deeppink";
+        document.body.style.margin="100px 0px 0px 300px";
+        document.body.style.fontSize="30px";
+        document.body.style.fontFamily="Cursive";
+        var i=0;
+        var num=[];
+        while(true){
+        var no=parseInt(prompt("Enter the no(Press 0 For Terminate)"));
+        if(no==0){ 
+            alert("You Enter 0");
+            break;
+        }
+
+        else{
+            num[i]=no;
+        }
+        i++;
+        }
+        function add(num){
+            var sum=0;
+        for (let i = 0; i < num.length; i++) {
+           sum+= num[i];
+           }
+            return sum;
+        }
+       document.write("Sum:  "+add(num));
+    </script>
+</body>
+</html>

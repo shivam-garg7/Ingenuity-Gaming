@@ -67,7 +67,7 @@ myfunction4(5,7);
 
 var a=function(){
     console.log("this is function expression");
-    retrun "hello function";
+    return "hello function";
 };
 console.log(a());
 
@@ -87,5 +87,79 @@ var Add=function(){
     return a+b;
 }
 
+// javascript Scope: visibility of code
+// there are 3 type of scope
+// 1.block Scope 
+// 2. function scope 
+// 3.global scope 
 
+
+// 1.block scope: not available in es5 but in es6 with let and const
+// function scope1(){
+//     {
+//     var a=10;
+//     console.log(a);
+//     }
+//     console.log(a);
+
+// }
+
+// function scope1(){
+//     var a=10;
+//     console.log(a);
+// }
+// scope1();
+// console.log(a);
+function scope1(){
+        var a=10;
+        console.log(a);
+        console.log("inside scope1");
+        function Scope2{
+            console.log("inside scope2");
+            console.log(a);
+
+        }
+        Scope2();
+     }
+scope1();
+function checkvar(){
+    // a variable that is create inside function without var keyword then it declred ad global variable
+    data=20;
+    console.log(data);
+
+}
+checkvar();
+console.log(data);
+function add(a,b){
+    return a+b;
+}
+var sum=add;
+// it create the reference 
+console.log(sum(5,10));
+console.log(add(5,10));
+// Passing function as argument
+function avg(a,b,sum){
+    return sum(a,b)/2;
+}
+function add(a,b){
+    return a+b;
+}
+var sum=add;
+var result=avg(5,10,sum);
+console.log(result);
+
+// function to create objects
+function Person(){
+    // Properties
+    this.name="pankaj";
+    this.age=30;
+    // methods
+    this.details=function(){
+        return "Name = "+this.name+this.age;
+    };
+}
+var obj1=new Person();
+console.log(obj1.name);
+obj1.name="sachin";
+console.log(obj.details());
 
