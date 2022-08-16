@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <script>
+        document.body.style.backgroundColor="pink";
+        document.body.style.margin="80px 0px 0px 200px";
+        document.body.style.fontSize="30px";
+        document.body.style.fontFamily="Courier";
+        document.body.style.color="VIOLET";
+        var s=prompt("Enter the String");
+        var news;
+        news=s.replace(/\s+/g, '');
+        document.write("String you Enter: "+s);
+        document.write("<br>"+"String after performing operation: "+news);
+        const cars = ["Saab", "Volvo", "BMW"];
+        document.write("<br>cars: "+cars);
+        document.write("<BR>copy the array in new array: Models");
+        var Models=[];
+        cars.forEach(i => {
+            Models.push(i);
+        });
+        document.write("<br>Models: "+Models);
+        var h=[20,60,70,45,36,27,78,68];
+        document.write("<br> The Array:  ");
+        document.write(h);
+        document.write("<br> The  Sorted Array:  ");
+        h.sort();
+        document.write(h.reverse());
+        var arr=["Suraj","rajat","ram","Shayam","Tarun"];
+        var ele=prompt("Enter The Element ");
+        var pos=prompt("Enter The position(max length"+arr.length+")");
+        document.write("<br>List: "+arr);
+        arr.splice(pos,0,ele);
+        document.write("<br>New Updated List: "+arr);
+        var per=[30,50,70,33,98,32];
+        document.write("<br>Percentages of students: "+per);
+        document.write("<br>Result : ")
+        per.forEach(i => {
+            if(i<45)document.write("fail\n");
+            else document.write("Pass\n");
+        });
+        
+    </script>
+</body>
+</html>
