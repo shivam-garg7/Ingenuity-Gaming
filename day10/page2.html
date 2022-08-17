@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.body.style.backgroundColor="deeppink";
+        document.body.style.margin="100px 0px 0px 300px";
+        document.body.style.fontSize="30px";
+        document.body.style.fontFamily="Cursive";
+        var numbers = [8,27,64,125,216];
+       var newarr=numbers.map((a)=> Math.cbrt(a));
+        document.write("Given array: "+numbers+"<br>");
+        document.write("New cube rooted array: "+newarr);
+    </script>
+</body>
+</html>

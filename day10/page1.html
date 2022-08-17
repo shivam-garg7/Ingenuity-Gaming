@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        document.body.style.backgroundColor="deeppink";
+        document.body.style.margin="50px 0px 0px 300px";
+        document.body.style.fontSize="25px";
+        document.body.style.fontFamily="Cursive";
+      var person = {
+        ft: document.write("By using call function: "),
+        fullName: function (city, country) {
+          return (
+            "My Name is " +
+            this.FirstName +
+            " " +
+            this.LastName +
+            "  . I am from" +
+            " " +
+            city +
+            " " +
+            country
+          );
+        },
+      };
+      var person1 = {
+        FirstName: prompt("Enter First Name"),
+        LastName: prompt("Enter Last Name"),
+      };
+      document.write(
+        person.fullName.call(
+          person1,
+          prompt("Enter City"),
+          prompt("Enter Country")
+        )
+      );
+      //   var person = {
+      //     ft: document.write(""),
+      //     fullName: function (city, country) {
+      //       return (
+      //         "My Name is " +
+      //         this.FirstName +
+      //         " " +
+      //         this.LastName +
+      //         "  . I am from" +
+      //         " " +
+      //         city +
+      //         " " +
+      //         country
+      //       );
+      //     },
+      //   };
+      //   var person2 = prompt("Enter your name,city,counrty(please enter info with spaces)");
+      //   var arr=[];
+      //   let a=0;
+      //   for (const i of person2) {
+      //     if(person2[i]==" "){
+      //         continue;
+      //         a++;
+      //     }
+      //     else{
+      //         arr[a]=arr[a]+person2.charAt(i);
+      //     }
+      //   }
+      var myinputarr = [];
+        var a=0;
+        var size=4
+      while (size>0) {
+        myinputarr[a] = prompt("Enter the details firstname lastname city country(one by one)" );
+        size--;
+        a++;
+      }
+      var person3 = {
+        ft: document.write("<br>By using Apply function: "),
+        fullN: function (fn, ln, cty, cnt) {
+          return (
+            "My Name is " +
+            fn +
+            " " +
+            ln +
+            "  . I am from" +
+            " " +
+            cty +
+            " " +
+            cnt
+          );
+        },
+      };
+      document.write(person3.fullN.apply(null, myinputarr));
+    </script>
+  </body>
+</html>
