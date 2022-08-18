@@ -23,9 +23,9 @@ function start(){
         m[ran].style.visibility="visible";
         setTimeout(() => {
             m[ran].style.visibility="hidden";
-        },5000 );
+        },1000 );
 
-    }, 1000);
+    }, 2000);
 }
 function count1(){
     counter++;
