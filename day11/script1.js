@@ -32,7 +32,6 @@ function count1(){
     document.getElementById('currentPoint').innerHTML=counter;
     
 }
-
 // m.addEventListener("click",task1);
 // function task1(){
 //     document.getElementById("#currentPoint").innerHTML=1;
