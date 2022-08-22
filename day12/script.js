@@ -36,6 +36,8 @@ btn.onclick=function createTodo(e){
 
 };
 }
+
+
 todoList.onclick=function checkBtn(e){
     var check =e.target;
     if(check.classList[0]=="deltbtn"){
