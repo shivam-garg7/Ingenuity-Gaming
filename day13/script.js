@@ -1,4 +1,12 @@
-
+// window.onload=function(){
+//     setInterval(() => {
+//         stoploader()
+//     }, 3000);
+// };
+function stoploader() {
+    document.querySelector('.container').style.display='none';
+    document.getElementById('todo-container').style.display='block';
+}
 // selectors
 var toInput=document.querySelector(".todo-input");
 var btn=document.querySelector('button');
@@ -37,20 +45,13 @@ btn.onclick=function createTodo(e){
 
 };
 }
-function fetch(){
-    
-}
+
 
 todoList.onclick=function checkBtn(e){
     var check =e.target;
     if(check.classList[0]=="deltbtn"){
          console.log("delete button pressed");
-         fetch();
-        var parentNode=check.parentElement;
-        var t=parentNode.children[0];
-        u.pop(t);
-        window.localStorage.setItem('info',u);
-
+        var parentNode=check.parentNode;
         // var KeyName = 
     //    var u
     //    = JSON.parse( window.localStorage.getItem('info'));
@@ -85,7 +86,7 @@ todoList.onclick=function checkBtn(e){
     // console.log(a);
 
 
-        parentNode.parentElement.remove(t);
+        parentNode.remove();
     }else if(check.classList[0]=="cmpltbtn"){
         console.log("complete button pressed");
         var parentNode=check.parentNode;
@@ -118,6 +119,9 @@ window.onload=function(){
         todoList.appendChild(newDiv);
         toInput.value="";
     }
+    setInterval(() => {
+        stoploader()
+    }, 3000);
     // var newDiv=document.createElement('div');
     // newDiv.classList.add('todo');
     // var newli=document.createElement('li');
