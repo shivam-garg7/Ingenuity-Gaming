@@ -2,6 +2,7 @@ var toInput=document.querySelector(".todo-input");
 var btn=document.querySelector('button');
 var todoList=document.querySelector('.todo-list');
 var tt;
+let p=0;
 let g=0;
 btn.onclick=function createTodo(e){
     e.preventDefault();
@@ -25,7 +26,7 @@ btn.onclick=function createTodo(e){
     newDiv.appendChild(cmpltbtn);
 
     var deltbtn=document.createElement('button');
-    deltbtn.classList.add('deltbtn');
+    deltbtn.classList.add('deltbtn',"");
     deltbtn.innerHTML='<i class="fa fa-trash"></i>';
     newDiv.appendChild(deltbtn);
 
@@ -42,14 +43,16 @@ todoList.onclick=function checkBtn(e){
     if(check.classList[0]=="deltbtn"){
          console.log("delete button pressed");
         var parentNode=check.parentNode;
-        let numb = check.classList.length
+        var t=parentNode.childern[0];
+
+
         //  var KeyName = window.localStorage.key(parentNode);
     //    var u= JSON.parse( window.localStorage.getItem('info'));
     //    for (var i = 0; i < u.length; i++) {
     //     // if (u[i] === "splice") 
     //         var spliced = arr.splice(i, 1);}
         // u.slice(parentNode,1);
-        window.localStorage.removeItem('tt'+numb);
+        window.localStorage.removeItem(t);
         parentNode.remove();
     }else if(check.classList[0]=="cmpltbtn"){
         console.log("complete button pressed");

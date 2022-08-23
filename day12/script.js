@@ -58,7 +58,6 @@ todoList.onclick=function checkBtn(e){
 //         var parentNode=check.parentElement;
 //         var t=parentNode.children[0];
 //         u.pop(t);
-        window.localStorage.setItem('info',u);
 
         // var KeyName = 
     //    var u
@@ -94,7 +93,7 @@ todoList.onclick=function checkBtn(e){
     // console.log(a);
 
 
-        parentNode.parentElement.remove(t);
+        // parentNode.parentElement.remove(t);
 
         var parentNode=check.parentNode;
         
