@@ -37,27 +37,27 @@ btn.onclick=function createTodo(e){
 
 };
 }
-<<<<<<< HEAD
-function fetch(){
+// <<<<<<< HEAD
+// function fetch(){
     
-}
-=======
+// }
+// =======
 // function cheat(){
 //     if()
 // }
 
 //  var u= JSON.parse( window.localStorage.getItem('info'));
->>>>>>> 0236479d4ee4293e41fd2814b58ba1a245fb0904
+// >>>>>>> 0236479d4ee4293e41fd2814b58ba1a245fb0904
 
 todoList.onclick=function checkBtn(e){
     var check =e.target;
     if(check.classList[0]=="deltbtn"){
          console.log("delete button pressed");
-<<<<<<< HEAD
-         fetch();
-        var parentNode=check.parentElement;
-        var t=parentNode.children[0];
-        u.pop(t);
+// <<<<<<< HEAD
+//          fetch();
+//         var parentNode=check.parentElement;
+//         var t=parentNode.children[0];
+//         u.pop(t);
         window.localStorage.setItem('info',u);
 
         // var KeyName = 
@@ -95,7 +95,7 @@ todoList.onclick=function checkBtn(e){
 
 
         parentNode.parentElement.remove(t);
-=======
+
         var parentNode=check.parentNode;
         
         // var KeyName = window.localStorage.key(index);
@@ -107,7 +107,6 @@ todoList.onclick=function checkBtn(e){
        
         
         parentNode.remove();
->>>>>>> 0236479d4ee4293e41fd2814b58ba1a245fb0904
     }else if(check.classList[0]=="cmpltbtn"){
         console.log("complete button pressed");
         var parentNode=check.parentNode;
