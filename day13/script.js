@@ -95,30 +95,30 @@ todoList.onclick=function checkBtn(e){
     }
 };
 window.onload=function(){
-    var arr=JSON.parse(localStorage.getItem("info"));
-    for (let j=0;j<arr.length;j++) {
-        var newDiv=document.createElement('div');
-        newDiv.classList.add('todo');
-        var newli=document.createElement('li');
-        newli.classList.add('todo_item');
-        // var test=window.localStorage.getItem('info',JSON.stringify(data));
-        // newli.innerHTML= window.localStorage.getItem('info',JSON.stringify(data));
-        newli.innerHTML=arr[j];
-        newDiv.appendChild(newli);
+    // var arr=JSON.parse(localStorage.getItem("info"));
+    // for (let j=0;j<arr.length;j++) {
+    //     var newDiv=document.createElement('div');
+    //     newDiv.classList.add('todo');
+    //     var newli=document.createElement('li');
+    //     newli.classList.add('todo_item');
+    //     // var test=window.localStorage.getItem('info',JSON.stringify(data));
+    //     // newli.innerHTML= window.localStorage.getItem('info',JSON.stringify(data));
+    //     newli.innerHTML=arr[j];
+    //     newDiv.appendChild(newli);
     
-        var cmpltbtn=document.createElement('button');
-        cmpltbtn.classList.add('cmpltbtn');
-        cmpltbtn.innerHTML='<i class="fa fa-check"></i>';
-        newDiv.appendChild(cmpltbtn);
+    //     var cmpltbtn=document.createElement('button');
+    //     cmpltbtn.classList.add('cmpltbtn');
+    //     cmpltbtn.innerHTML='<i class="fa fa-check"></i>';
+    //     newDiv.appendChild(cmpltbtn);
     
-        var deltbtn=document.createElement('button');
-        deltbtn.classList.add('deltbtn');
-        deltbtn.innerHTML='<i class="fa fa-trash"></i>';
-        newDiv.appendChild(deltbtn);
+    //     var deltbtn=document.createElement('button');
+    //     deltbtn.classList.add('deltbtn');
+    //     deltbtn.innerHTML='<i class="fa fa-trash"></i>';
+    //     newDiv.appendChild(deltbtn);
     
-        todoList.appendChild(newDiv);
-        toInput.value="";
-    }
+    //     todoList.appendChild(newDiv);
+    //     toInput.value="";
+    // }
     setInterval(() => {
         stoploader()
     }, 3000);
