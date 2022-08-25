@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Tag</title>
+</head>
+<body>
+   <audio controls  id="myaudio">
+    <source src="../image/goldn-116392.mp3" type="audio/mp3"/>
+    <!-- <source src="">
+    <source src="">
+    <source src=""> -->
+   </audio>
+
+   <button id="btn1">play</button>
+
+   <!-- <video controls loop autoplay muted hidden width="500" height="600" id="myvideo">
+    <source src="../image/goldn-116392.mp4" type="audio/mp4"/>
+    <source src="">
+    <source src="">
+    <source src="">
+   </video> -->
+   <script>
+    var myAudio=document.getElementById('myaudio');
+    // console.log(myAudio);
+    var btn=document.getElementById('btn1');
+    btn.onclick=performAudioTasks;
+    var btn=document.getElementById('btn1');
+    function performAudioTasks(){
+        myAudio.play();
+        myAudio.src("");
+        myAudio.play();
+        x.load();
+        myAudio.autoplay=ture;
+        x.muted=true;
+        if(myAudio.muted == true){
+            myAudio.muted= false;
+
+        }else{
+            myAudio.muted=true;
+
+        }
+        var newAudio=new Audio();
+        newAudio.src="";
+        newAudio.play();
+        newAudio.loop=true;
+        newAudio.load();
+        newAudio.play();
+    }
+
+   </script>
+</body>
+</html>
