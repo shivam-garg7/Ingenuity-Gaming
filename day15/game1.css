@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../image/vecteezyhalloween-festivity-back\ \(2\).jpg);
+    overflow: hidden;
+
+}
+#btn1{
+    text-align: center;
+    margin-top: 400px;
+}
+#container{
+    height: 100vh;
+
+}
+#btn{
+    background-color: transparent;
+    width: 200px;
+    height: 70px;
+    border-radius: 25px;
+    border: 2px solid rgb(67, 143, 220);
+    font-size: 30px;
+    color:  rgb(10, 36, 61);
+    font-family: cursive;
+    cursor: pointer;
+    box-shadow:5px 5px 5px 5px blue;
+}
+#loading{
+    
+}

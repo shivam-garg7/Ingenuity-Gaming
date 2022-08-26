@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    /* max-height: 100%; */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.755);
+    font-family: arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../image/vecteezyhalloween-festivity-back\ \(2\).jpg);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+
+     
+    
+    /* visibility: hidden; */
+  }
+  #canvas {
+    margin-top: 10px;
+    background-color: azure;
+    border-radius: 10px;
+    visibility: hidden;
+    object-fit: cover;
+    
+  }
+  
+  #source {
+    display: none;
+  }
+  h1{
+    visibility: hidden;
+  }
+  #btn1{
+ 
+    cursor: pointer;
+        border: 1px solid #3498db;
+        background-color: transparent;
+        height: 50px;
+        width: 200px;
+        color: #3498db;
+        font-size: 30px;
+        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+        border-radius: 15px;
+        margin-top: 350px;
+        /* align-items: center; */
+        
+}
+#gif{
+    align-items: center;
+    
+}
+
+/* #btn{ */
+    /* margin-bottom: 300px;
+} */
+/* #img{
+    height: 100%;
+
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-image: url(../image/vecteezyhalloween-festivity-backgroundAW0821_generated.jpg);
+} */
