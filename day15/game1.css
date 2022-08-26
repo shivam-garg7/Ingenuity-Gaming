@@ -3,17 +3,20 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
+/* body{
     background-image: url(../image/vecteezyhalloween-festivity-back\ \(2\).jpg);
     overflow: hidden;
 
-}
+} */
 #btn1{
     text-align: center;
     margin-top: 400px;
+    transform: translate(-390%, -40%);
 }
 #container{
+    display: flex;
     height: 100vh;
+    
 
 }
 #btn{
@@ -27,7 +30,18 @@ body{
     font-family: cursive;
     cursor: pointer;
     box-shadow:5px 5px 5px 5px blue;
+    
 }
 #loading{
-    
+   
+visibility: hidden;
+position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-100%, -50%); 
+display: none;
+}
+#loadingtext{
+    margin-bottom: 10px;
+    text-align: center;
 }
