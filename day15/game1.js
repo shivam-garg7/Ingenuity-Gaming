@@ -1,10 +1,18 @@
 function loading(){
-    document.getElementById('container').style.visibility="hidden"
-    document.getElementById('loading').style.visibility="visible"
-    document.getElementById('loading').style.display="block"
-    setTimeout(() => {
+    document.getElementsById('container').style.visibility="hidden"
+    // document.getElementById('').style.visibility="visible"
+    // document.getElementById('btn').style.display="block"
+    mainfun();
+    // setTimeout(() => {
        
-        document.getElementById('loading').style.visibility="hidden"
-        document.getElementById('loading').style.display="none"
-    }, 3000);
+    //     document.getElementById('loading').style.visibility="hidden"
+    //     document.getElementById('loading').style.display="none"
+    //     mainfun();
+    // }, 3000);
+
+
 }
+ function mainfun(){
+   
+    document.getElementById('mainpage').style.visibility="visible";
+ }

@@ -8,18 +8,18 @@
     overflow: hidden;
 
 } */
-#btn1{
+/* #btn1{
     text-align: center;
     margin-top: 400px;
     transform: translate(-390%, -40%);
-}
-#container{
+} */
+/* #container{
     display: flex;
     height: 100vh;
     
 
-}
-#btn{
+} */
+/* #btn{
     background-color: transparent;
     width: 200px;
     height: 70px;
@@ -44,4 +44,8 @@ display: none;
 #loadingtext{
     margin-bottom: 10px;
     text-align: center;
-}
+}*/
+ #mainpage
+{
+    visibility: hidden;
+} 
