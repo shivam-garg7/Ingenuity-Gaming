@@ -1,39 +1,4 @@
-// window.onload=function(){
-//   const music = new Audio('../image/goldn-116392.mp3');
- 
-// music.play();
-// music.playbackRate = 2;
-// }
-// document.getElementById('gif').style.visibility="hidden"
-document.getElementById('gif').style.dispaly = 'none';
-function hand(){
-  // var myAudio=document.getElementById('myaudio');
-  // myAudio.autoplay=ture;
-  // myAudio.play();
-  
-  const music = new Audio('../image/magic-6976.mp3');
-  music.play();
-  document.getElementById("btn1").style.visibility="hidden"
-  document.getElementById('gif').style.display = 'block';
-  // document.getElementById('gif').style.visibility="visible";
-  // document.getElementsByTagName('img').style.visibility="visible"
-
-  setTimeout(() => {
-    // document.getElementsByTagName('gif').style.visibility="hidden"
-  
-// const music = new Audio('../image/magic-6976.mp3');
-// music.play();
-// music.loop =true;
-// music.playbackRate = 2;
-// document.getElementById('gif').style.visibility="hidden"
-document.getElementById('gif').style.dispaly="none";
-  document.getElementById("canvas").style.visibility="visible"
-  document.getElementById("hh").style.visibility="visible"
-  // document.getElementById("btn1").style.visibility="hidden"
-  document.getElementById('canvas').style.display = 'block';
-  // document.getElementById('btn').style.display = 'none';
-  
-
+// selector
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 
@@ -145,5 +110,3 @@ update();
 
 document.addEventListener("keydown", keyDown);
 document.addEventListener("keyup", keyUp);
-}, 3000);
-}
