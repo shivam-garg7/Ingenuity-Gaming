@@ -6,7 +6,7 @@ while(true){
     let no=parseInt(n);
     if(no==0){
         alert("you enter 0");
-        adder();
+        adder(...num1);
         break;
     }
     else{
@@ -16,17 +16,18 @@ while(true){
 function adder(...num1:number[]){
     let su:number=0;
     for (var i=0;i<num1.length;i++) {
-         t=num1[i];
-        let u:number=t;
-        su=su+u;
+         let u:any=num1[i];
+
+         sum=sum+ parseInt(u);
     }
     console.log(su);
-    let para1=document.createElement('p');
-    para1.innerHTML=`${su}`;
-document.body.appendChild(para1);
-}
     
-// document.body.style.backgroundColor="grey";
-// document.body.style.color="white";
-// document.body.style.fontSize
+}
+let para1=document.createElement('p');
+    para1.innerHTML=`Sum:  ${sum}`;
+document.body.appendChild(para1);
+    
+document.body.style.backgroundColor="grey";
+document.body.style.color="white";
+document.body.style.fontSize="40px";
 
